@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Mail, ArrowRight, ChevronRight } from "lucide-react";
-import { Logo } from "@/components/ui/logo";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site-config";
@@ -34,8 +34,8 @@ export function Navbar() {
 
     return (
         <nav className={cn(
-            "fixed w-full z-50 transition-all duration-300",
-            scrolled ? "bg-background/95 backdrop-blur-md border-b border-white/10" : "bg-transparent"
+            "fixed w-full z-50 transition-all duration-300 bg-white border-b border-zinc-100 shadow-sm",
+            scrolled ? "py-0" : "py-2"
         )}>
             {/* Top Bar for Contacts - Hidden on scroll to save space, or keep simpler */}
             <div className={cn(
@@ -56,7 +56,14 @@ export function Navbar() {
 
             <div className="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="hover:opacity-90 transition-opacity z-50">
-                    <Logo />
+                    <Image
+                        src="/logotipo.png"
+                        alt={siteConfig.name}
+                        width={220}
+                        height={80}
+                        className="h-20 w-auto object-contain py-2"
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -69,8 +76,8 @@ export function Navbar() {
                                 className={cn(
                                     "text-sm font-medium transition-colors tracking-wide uppercase relative py-2",
                                     pathname === item.href
-                                        ? "text-primary"
-                                        : "text-zinc-300 hover:text-white"
+                                        ? "text-primary font-bold"
+                                        : "text-zinc-950 hover:text-black font-semibold"
                                 )}
                             >
                                 {item.name}
@@ -91,7 +98,7 @@ export function Navbar() {
                 <div className="lg:hidden">
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                            <Button variant="ghost" size="icon" className="text-black hover:bg-zinc-100">
                                 <Menu className="w-6 h-6" />
                             </Button>
                         </SheetTrigger>
@@ -100,8 +107,14 @@ export function Navbar() {
                                 <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
                                 <SheetDescription className="sr-only">Navegue pelas páginas principais do site.</SheetDescription>
 
-                                <div className="p-8 border-b border-white/5">
-                                    <Logo />
+                                <div className="p-8 border-b border-white/5 bg-white">
+                                    <Image
+                                        src="/logotipo.png"
+                                        alt={siteConfig.name}
+                                        width={160}
+                                        height={50}
+                                        className="h-10 w-auto object-contain"
+                                    />
                                 </div>
                                 <div className="flex-1 overflow-y-auto py-8 px-6">
                                     <div className="flex flex-col gap-2">

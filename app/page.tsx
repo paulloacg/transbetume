@@ -26,7 +26,7 @@ export default function Home() {
                 <span className="text-primary text-xs font-bold tracking-[0.2em] uppercase">Transporte & Logística Pesada</span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tight uppercase">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] tracking-tight uppercase">
                 Infraestrutura <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-500">Em Movimento</span>
               </h1>
