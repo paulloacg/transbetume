@@ -4,6 +4,12 @@ import { Footer } from "@/components/layout/Footer";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Eye, Target, Shield, Briefcase, Clock, Truck } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Sobre Nós",
+    description: `Conheça a história e o propósito da ${siteConfig.name}, líder em transporte e logística para infraestrutura em Angola. Explore nossa missão, visão e valores.`,
+};
 
 export default function AboutPage() {
     return (

@@ -2,6 +2,12 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageHeader } from "@/components/ui/page-header";
 import { Truck, Scale, Map, ShieldCheck, Wrench, Fuel } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Nossa Frota & Equipamentos",
+    description: "Explore nossa frota de camiões cisterna para betume, basculantes e pranchas pesadas. Manutenção rigorosa e tecnologia de rastreio.",
+};
 
 export default function FleetPage() {
     return (

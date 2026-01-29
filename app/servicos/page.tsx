@@ -4,6 +4,12 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Truck, Building2, HardHat, Factory, Map, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Serviços de Logística e Transporte",
+    description: "Oferecemos transporte de betume, apoio a obras públicas, logística industrial e transporte rodoviário pesado em toda Angola.",
+};
 
 const services = [
     {

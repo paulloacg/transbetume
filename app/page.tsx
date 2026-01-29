@@ -4,6 +4,12 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Truck, HardHat, Building2, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "TRANSBETUME | Especialista em Transporte de Betume e Logística Pesada em Angola",
+  description: "Líder no transporte de betume e materiais de construção em Angola. Soluções logísticas robustas para infraestrutura e grandes obras públicas.",
+};
 
 export default function Home() {
   return (

@@ -4,6 +4,12 @@ import { Footer } from "@/components/layout/Footer";
 import { PageHeader } from "@/components/ui/page-header";
 import { ContactForm } from "@/components/contact-form"; // We will create this
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contacte-nos",
+    description: "Entre em contacto com a TransBetume. Solicite orçamentos, informações técnicas ou propostas logísticas para o seu projeto em Angola.",
+};
 
 export default function ContactsPage() {
     return (

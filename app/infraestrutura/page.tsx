@@ -3,6 +3,12 @@ import { Footer } from "@/components/layout/Footer";
 import { PageHeader } from "@/components/ui/page-header";
 import { Hammer, HardHat, LandPlot } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Projetos de Infraestrutura",
+    description: "Participamos no desenvolvimento de infraestruturas críticas em Angola, apoiando construção civil, obras rodoviárias e indústria extrativa.",
+};
 
 export default function InfrastructurePage() {
     return (
