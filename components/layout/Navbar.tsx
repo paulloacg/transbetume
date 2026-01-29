@@ -102,18 +102,18 @@ export function Navbar() {
                                 <Menu className="w-6 h-6" />
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-secondary border-l border-white/10 p-0">
-                            <div className="flex flex-col h-full bg-secondary">
+                        <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white border-l border-zinc-100 p-0 text-zinc-900">
+                            <div className="flex flex-col h-full bg-white">
                                 <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
                                 <SheetDescription className="sr-only">Navegue pelas páginas principais do site.</SheetDescription>
 
-                                <div className="p-8 border-b border-white/5 bg-white">
+                                <div className="p-8 border-b border-zinc-100 bg-white">
                                     <Image
                                         src="/logotipo.png"
                                         alt={siteConfig.name}
-                                        width={160}
-                                        height={50}
-                                        className="h-10 w-auto object-contain"
+                                        width={180}
+                                        height={60}
+                                        className="h-16 w-auto object-contain"
                                     />
                                 </div>
                                 <div className="flex-1 overflow-y-auto py-8 px-6">
@@ -126,8 +126,8 @@ export function Navbar() {
                                                 className={cn(
                                                     "flex items-center justify-between p-4 rounded-none border-l-2 transition-all duration-200",
                                                     pathname === item.href
-                                                        ? "bg-white/5 border-primary text-primary"
-                                                        : "border-transparent text-zinc-400 hover:text-white hover:bg-white/5 hover:border-zinc-500"
+                                                        ? "bg-zinc-50 border-primary text-primary font-bold"
+                                                        : "border-transparent text-zinc-600 hover:text-black hover:bg-zinc-50 hover:border-zinc-300"
                                                 )}
                                             >
                                                 <span className="text-sm font-bold uppercase tracking-wider">{item.name}</span>
@@ -139,14 +139,14 @@ export function Navbar() {
                                     <div className="mt-12 space-y-6">
                                         <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-widest px-4">Contactos Diretos</h4>
                                         <div className="px-4 space-y-4">
-                                            <div className="flex items-center gap-3 text-zinc-400">
-                                                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-primary">
+                                            <div className="flex items-center gap-3 text-zinc-600">
+                                                <div className="w-8 h-8 rounded-full bg-zinc-100 flex items-center justify-center text-primary">
                                                     <Phone className="w-4 h-4" />
                                                 </div>
                                                 <span className="text-sm font-medium">{siteConfig.contact.phone.main}</span>
                                             </div>
-                                            <div className="flex items-center gap-3 text-zinc-400">
-                                                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-primary">
+                                            <div className="flex items-center gap-3 text-zinc-600">
+                                                <div className="w-8 h-8 rounded-full bg-zinc-100 flex items-center justify-center text-primary">
                                                     <Mail className="w-4 h-4" />
                                                 </div>
                                                 <span className="text-sm font-medium">{siteConfig.contact.email.geral}</span>
@@ -154,7 +154,7 @@ export function Navbar() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="p-6 border-t border-white/5 bg-black/20">
+                                <div className="p-6 border-t border-zinc-100 bg-zinc-50">
                                     <Link href="/contactos" onClick={() => setOpen(false)}>
                                         <Button className="w-full py-6 text-base shadow-xl shadow-primary/10">
                                             PEDIR COTAÇÃO <ArrowRight className="ml-2 w-4 h-4" />

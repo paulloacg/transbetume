@@ -107,8 +107,8 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="relative">
-              <div className="aspect-[4/3] bg-zinc-800 relative z-10 border border-white/10 overflow-hidden group">
+            <div className="relative w-full">
+              <div className="aspect-[4/3] bg-zinc-800 relative z-10 border border-white/10 overflow-hidden group w-full">
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500 z-10"></div>
                 {/* Placeholder image */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"></div>
@@ -118,7 +118,7 @@ export default function Home() {
                 </div>
               </div>
               {/* Decorative element */}
-              <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-primary/30 z-0 hidden lg:block"></div>
+              <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-primary/30 z-0 block"></div>
             </div>
           </div>
         </section>
