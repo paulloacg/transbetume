@@ -20,9 +20,9 @@ export default function Home() {
         {/* HERO SECTION */}
         <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
           {/* Background Overlay */}
-          <div className="absolute inset-0 bg-secondary/90 z-0">
-            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596720426673-e4e15d91244e?q=80&w=2671&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-background/90"></div>
+          <div className="absolute inset-0 bg-zinc-900 z-0">
+            <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-cover bg-center opacity-80 mix-blend-overlay animate-subtle-zoom"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-background/80"></div>
           </div>
 
           <div className="relative z-10 max-w-[1400px] mx-auto px-6 w-full pt-20">
@@ -117,7 +117,7 @@ export default function Home() {
               <div className="aspect-[4/3] bg-zinc-800 relative z-10 border border-white/10 overflow-hidden group w-full">
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500 z-10"></div>
                 {/* Placeholder image */}
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"></div>
+                <div className="absolute inset-0 bg-[url('/about-hq.png')] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"></div>
 
                 <div className="absolute bottom-0 left-0 bg-primary p-6 z-20">
                   <p className="text-black font-bold text-xl leading-tight uppercase">Sede em <br /> Luanda</p>
